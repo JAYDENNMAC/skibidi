@@ -4,12 +4,16 @@
 </head>
 <body>
 <div id="A">
-<p style="font-family:'Courier New'"> this is my porfolio! </p>
+<p style="font-family:'Courier New'"> this is my porfolio! - FRAME-0 </p>
 </div>
-<button type="button" onclick="next()" id="A"> NEXT </button>
+<div id="
+<br>
+<br>
+<button type="button" onclick='next();' id="A"> FRAME-1 </button>
 <script>
 function next(){
-	document.getElementByID("A").hidden = true;
+	document.getElementById("A").hidden = true;
+	windows.alert(1);
 }
 </script>
 </body>
