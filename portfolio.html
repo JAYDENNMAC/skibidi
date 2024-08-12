@@ -4,16 +4,34 @@
 </head>
 <body>
 <div id="A">
-<p style="font-family:'Courier New'"> this is my porfolio! - FRAME-0 </p>
+<p style="font-family:'Courier New'"> this is my porfolio! - 
+FRAME-0 </p>
 </div>
-<div id="
+<div id="B">
+<p style="font-family:'Courier New'">
+I am Jayden, and i like to engineer stuff using a arduino and bread board. i am talkative but smart type of person
+FRAME-1
+</p>
+</div>
+<div id="C">
+<p style="font-family:'Courier New'">
+I am Jayden, and i like to engineer stuff using a arduino and bread board. i am talkative but smart type of person
+FRAME-1
+</p>
+</div>
 <br>
 <br>
-<button type="button" onclick='next();' id="A"> FRAME-1 </button>
+<button type="button" onclick='fA();' id="A"> FRAME-1 </button>
+<button type="button" onclick='fB);' id="A"> FRAME-2 </button>
 <script>
-function next(){
+document.getElementById("B").hidden = true;
+document.getElementById("C").hidden = true;
+function fA(){
 	document.getElementById("A").hidden = true;
-	windows.alert(1);
+	document.getElementById("B").hidden = false;
+}
+function fB(){
+	
 }
 </script>
 </body>
